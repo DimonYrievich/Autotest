@@ -53,6 +53,10 @@ try:
     search_box.click()                                                                   # жмакаем по вкладке "download"
     sleep(4)                                                                             #  делаем задержку на 4 секунды
     driver.save_screenshot("screenshot_2.png")                           # меняем название и сохраняем скриншот страницы
+
+    driver.get("https://docs.djangoproject.com/en/5.0/")  # изменение в ветке django
+    sleep(10)                                             # изменение в ветке django
+
 finally:
     driver.quit()
 
